@@ -100,7 +100,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../%E5%9B%BA%E5%AE%9A%E6%94%B6%E7%9B%8A%E8%AF%81%E5%88%B8%E4%B8%8E%E6%A8%A1%E5%9E%8B/">固定收益证券分析和模型复习</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../%E5%9B%BA%E5%AE%9A%E6%94%B6%E7%9B%8A%E8%AF%81%E5%88%B8%E4%B8%8E%E6%A8%A1%E5%9E%8B/">固定收益证券模型复习</a>
                     </li>
                 </ul>
                 <ul>
@@ -168,7 +168,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/">维护者注</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/">数据库系统原理</a>
                     </li>
                 </ul>
                 <ul>
@@ -260,7 +260,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">Tiger Compiler Module for Programming Exercises</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a>
                     </li>
                 </ul>
                 <ul>
@@ -306,7 +306,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../%E8%B5%84%E4%BA%A7%E5%AE%9A%E4%BB%B7/">资产定价作业</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../%E8%B5%84%E4%BA%A7%E5%AE%9A%E4%BB%B7/">资产定价</a>
                     </li>
                 </ul>
                 <ul>
@@ -314,7 +314,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">维护者注</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a>
                     </li>
                 </ul>
                 <ul>
@@ -380,78 +380,29 @@
           <div role="main">
             <div class="section">
               
-                <p><strong>直接运行run.sh来编译和运行卷积相关的程序即可，需要先设置riscv有关的路径</strong></p>
-<p><strong>Usage: ./run.sh 1/2 k1 k2 k3</strong></p>
-<h4 id="rv64rv32python">运行前需要先设置RV64和RV32的路径和python</h4>
-<pre><code class="shell"># Setting 
-RV32=$HOME/riscv32/riscv-tools/build/bin
-RV64=$HOME/riscv64/riscv-tools/build/bin
-py=python3
-</code></pre>
-
-<h4 id="requirements">requirements</h4>
-<blockquote>
-<ul>
-<li>python3</li>
-<li>python-pil</li>
-<li>python-struct</li>
-<li>bash</li>
-</ul>
-</blockquote>
-<h4 id="rgba">RGBA数据</h4>
-<p>编码方式为: w, h, 1024*2048(r), 1024*2048(g), 1024*2048(b), 1024*2048(a)</p>
-<blockquote>
-<ul>
-<li>input.png 原始图片</li>
-<li>func.c 用到的函数</li>
-<li>func.h 头文件</li>
-<li>main.c 主程序</li>
-<li>read_bin.py 读取二进制文件,生成图片</li>
-<li>read_image.py 读取图像rgb，生成二进制文件,编码方式为：w, h, 1024*2048(r), 1024*2048(g), 1024*2048(b)</li>
-</ul>
-</blockquote>
-<h4 id="result">result</h4>
-<p><strong>RV64</strong></p>
-<pre><code class="shell">~/RV64/build/bin/riscv64-unknown-elf-gcc main.c
-~/RV64/build/bin/spike ~/RV64/build/riscv64-unknown-elf/bin/pk -s a.out
-</code></pre>
-
-<p>47040200 ticks<br />
-4604461711 cycles<br />
-4604461710 instructions<br />
-1.00 CPI  </p>
-<p><strong>RV32</strong></p>
-<pre><code class="shell">~/RV32/build/bin/riscv32-unknown-elf-gcc main.c
-~/RV32/build/bin/spike ~/RV32/build/riscv64-unknown-elf/bin/pk -s a.out
-</code></pre>
-
-<p>103678800 ticks<br />
-1685615543 cycles<br />
-1685615542 instructions<br />
-1.00 CPI  </p>
-<h2 id="_1">文件列表</h2>
+                <h2 id="_1">文件列表</h2>
 <ul>
 <li>计算机组成与系统结构<ul>
 <li>prj_1<ul>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_1/Project_1.pdf">Project_1.pdf</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_1/Project_1.pdf">Project_1.pdf</a></li>
 <li>src<ul>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_1/src/func.c">func.c</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_1/src/func.h">func.h</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_1/src/input.png">input.png</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_1/src/main.c">main.c</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_1/src/read_bin.py">read_bin.py</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_1/src/read_image.py">read_image.py</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_1/src/run.sh">run.sh</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_1/src/func.c">func.c</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_1/src/func.h">func.h</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_1/src/input.png">input.png</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_1/src/main.c">main.c</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_1/src/read_bin.py">read_bin.py</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_1/src/read_image.py">read_image.py</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_1/src/run.sh">run.sh</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>prj_2<ul>
 <li>src<ul>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_2/src/alu.scala">alu.scala</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_2/src/benchmark.c">benchmark.c</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_2/src/cpath.scala">cpath.scala</a></li>
-<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/计算机组成与系统结构/prj_2/src/plot.py">plot.py</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_2/src/alu.scala">alu.scala</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_2/src/benchmark.c">benchmark.c</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_2/src/cpath.scala">cpath.scala</a></li>
+<li><a href="https://github.com/QSCTech/zju-icicles/raw/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/prj_2/src/plot.py">plot.py</a></li>
 </ul>
 </li>
 </ul>
